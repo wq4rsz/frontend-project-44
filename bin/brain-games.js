@@ -1,2 +1,4 @@
 #!usr/bin/env node
-console.log("Welcome to the Brain Games!");
+import questionAnswer from '../src/cli.js';
+
+questionAnswer();
