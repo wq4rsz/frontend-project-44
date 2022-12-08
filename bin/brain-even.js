@@ -1,11 +1,11 @@
 import readlineSync from 'readline-sync'
 const parityCheck = () => {
-    console.log('brain-games\nWelcome to the Brain Games!');
+    console.log('Welcome to the Brain Games!');
     const username = readlineSync.question('May I have your name? ');
     console.log(`Hello, ${username}!`);
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
     for (let i = 0; i < 3; i++) {
-    const randomNumber = Math.floor(Math.random() * (30 - 1 + 1)) + 1;
+    const randomNumber = Math.floor(Math.random() * 30) + 1;
     console.log(`Question: ${randomNumber}`);
     const yesOrNo = readlineSync.question('Your answer: ');
     if (randomNumber % 2 === 0 && yesOrNo === 'yes') {
