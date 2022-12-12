@@ -1,3 +1,4 @@
+import readlineSync from 'readline-sync'
 export let counter = 0;
 
 export const evenOdd = (number) => {
@@ -25,8 +26,8 @@ export const conclusion = (userAnswer, correctAnswer, username) => {
     }
 };
 
-export const randomNumbers = () => {
-    return Math.floor(Math.random() * 30) + 1;
+export const randomNumbers = (min, max) => {
+    return Math.floor(Math.random() * (max - min) + min);
 };
 
 export const getExpressions = (firstValue, charsValue, secondValue) => {
@@ -45,4 +46,30 @@ export function NOD (x, y) {
 	if (y > x) return String(NOD(y, x));
 	if (!y) return String(x);
 	return String(NOD(y, x % y));
+};
+
+export const randomProgression = (username) => {
+    let arrayRanNum = [];
+    const ranArrLength = randomNumbers(5, 10);
+    let ranFirNumber = randomNumbers(1, 5);
+    let step = randomNumbers(1, 5);
+    for (let i = 0; i < ranArrLength; i++) {
+        arrayRanNum.push(ranFirNumber);
+        ranFirNumber += step;
+    }
+    const ranIndex = randomNumbers(0, arrayRanNum.length);
+    const rigthAnswer = arrayRanNum[ranIndex];
+    arrayRanNum[ranIndex] = '..';
+    console.log(`Question: ${arrayRanNum.join(' ')}`);
+    const yourAnswer = readlineSync.question('Your answer: ');
+    if (Number(yourAnswer) - arrayRanNum[ranIndex - 1] === step) {
+        console.log('Correct!');
+        counter ++;
+        return true;
+    }
+    else {
+        console.log(`'${yourAnswer}' is wrong answer ;(. Correct answer was '${rigthAnswer}'.\nLet's try again, ${username}!`);
+        counter = 0;
+        return false;
+    }
 };

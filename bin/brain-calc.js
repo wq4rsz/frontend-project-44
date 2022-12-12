@@ -5,8 +5,8 @@ const calculator = () => {
     const name = questionAnswer();
     console.log('What is the result of the expression?');
     for (let i = 0; i < 3; i++) {
-        const ranFirNumber = randomNumbers();
-        const ranSecNumber = randomNumbers();
+        const ranFirNumber = randomNumbers(1, 30);
+        const ranSecNumber = randomNumbers(1, 30);
         const chars = ['+', '-', '*'];
         const charsLength = chars.length;
         const randomChars = chars[Math.floor(Math.random() * charsLength)];
