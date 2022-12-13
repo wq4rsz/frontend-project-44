@@ -3,7 +3,7 @@ import questionAnswer from '../src/cli.js'
 import { randomNumbers, evenOdd, conclusion, counter } from '../src/index.js'
 const parityCheck = () => {
     const name = questionAnswer();
-    console.log('Answer "yes" if the number is even, otherwise answer "no".');
+    console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
     for (let i = 0; i < 3; i++) {
         const randomNumber = randomNumbers(1, 30);
         console.log(`Question: ${randomNumber}`);
