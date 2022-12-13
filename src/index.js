@@ -75,21 +75,12 @@ export const randomProgression = (username) => {
 };
 
 export const getPrime = (number) => {
-<<<<<<< HEAD
     if (number === 1) {
         return 'no';
     }
     if (number === 2) {
         return 'yes';
     }
-=======
-    if (number === 2) {
-        return 'yes';
-    }
-    if (number === 1) {
-        return 'no';
-    }
->>>>>>> b18a0e298b03e04d03909c1c9381febcca453695
     for (let i = 2; i < number; i++) {
         if (number % i === 0) {
             return 'no';
