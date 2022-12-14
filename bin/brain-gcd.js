@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync'
 import questionAnswer from '../src/cli.js'
 import { randomNumbers, NOD, conclusion } from '../src/index.js'
