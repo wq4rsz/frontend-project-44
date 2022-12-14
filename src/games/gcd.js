@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync'
-import questionAnswer from '../src/cli.js'
-import { randomNumbers, NOD, conclusion, task } from '../src/index.js'
+import questionAnswer from '../cli.js'
+import { randomNumbers, NOD, conclusion, task } from '../index.js'
 const getNOD = () => {
     const name = questionAnswer();
     task('gcd');

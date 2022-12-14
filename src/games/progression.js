@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync'
-import questionAnswer from '../src/cli.js'
-import { randomProgression, randomNumbers, counter, task } from '../src/index.js'
+import questionAnswer from '../cli.js'
+import { randomProgression, randomNumbers, counter, task } from '../index.js'
 const progression = () => {
     const name = questionAnswer();
     task('progression');

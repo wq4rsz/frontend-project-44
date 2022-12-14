@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync'
-import questionAnswer from '../src/cli.js'
-import { randomNumbers, conclusion, counter, getPrime, task, bypass, bypass2 } from '../src/index.js'
+import questionAnswer from '../cli.js'
+import { randomNumbers, conclusion, counter, getPrime, task, bypass, bypass2 } from '../index.js'
 const prime = () => {
     const name = bypass();
     for (let i = 0; i < 3; i++) {
