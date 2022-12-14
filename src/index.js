@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync'
-import questionAnswer from './cli';
+import questionAnswer from '../src/cli.js';
 export let counter = 0;
 
 export const evenOdd = (number) => {
@@ -30,8 +30,9 @@ export const task = (gameName) => {
 };
 
 export const bypass = () => {
+    let name = questionAnswer();
     task('prime');
-    return questionAnswer();
+    return name;
 }
 
 export const conclusion = (userAnswer, correctAnswer, username) => {
