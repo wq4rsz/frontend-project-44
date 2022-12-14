@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync'
 import questionAnswer from '../src/cli.js'
-import { randomNumbers, evenOdd, conclusion, counter, task } from '../src/index.js'
+import { randomNumbers, evenOdd, conclusion, counter } from '../src/index.js'
 const parityCheck = () => {
     const name = questionAnswer();
     console.log('Answer "yes" if the number is even, otherwise answer "no".');

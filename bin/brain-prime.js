@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync'
 import questionAnswer from '../src/cli.js'
-import { randomNumbers, conclusion, counter, getPrime, task } from '../src/index.js'
+import { randomNumbers, conclusion, counter, getPrime } from '../src/index.js'
 const prime = () => {
     const name = questionAnswer();
     console.log('Answer "yes" if the number is prime, otherwise answer "no".');
