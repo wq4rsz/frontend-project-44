@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync'
-import questionAnswer from '../src/cli.js'
+import questionAnswer from '../cli.js'
 import { randomNumbers, evenOdd, conclusion, counter, task } from '../src/index.js'
 const parityCheck = () => {
     const name = questionAnswer();
