@@ -10,6 +10,24 @@ export const evenOdd = (number) => {
     }
 };
 
+export const task = (gameName) => {
+    if (gameName === 'even') {
+        console.log('Answer "yes" if the number is even, otherwise answer "no".');
+    }
+    else if (gameName === 'calc') {
+        console.log('What is the result of the expression?');
+    }
+    else if (gameName === 'gcd') {
+        console.log('Find the greatest common divisor of given numbers.');
+    }
+    else if (gameName === 'progression') {
+        console.log('What number is missing in the progression?');
+    }
+    else if (gameName === 'prime') {
+        console.log('Answer "yes" if the number is prime, otherwise answer "no".');
+    }
+};
+
 export const conclusion = (userAnswer, correctAnswer, username) => {
     if (userAnswer === correctAnswer) { 
         console.log('Correct!');
