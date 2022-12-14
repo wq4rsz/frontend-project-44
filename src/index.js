@@ -77,7 +77,7 @@ export const randomProgression = (username) => {
     let arrayRanNum = [];
     const ranArrLength = randomNumbers(5, 10);
     let ranFirNumber = randomNumbers(1, 5);
-    let step = randomNumbers(1, 5);
+    let step = Number(randomNumbers(1, 5));
     for (let i = 0; i < ranArrLength; i++) {
         arrayRanNum.push(ranFirNumber);
         ranFirNumber += step;
@@ -87,7 +87,7 @@ export const randomProgression = (username) => {
     arrayRanNum[ranIndex] = '..';
     console.log(`Question: ${arrayRanNum.join(' ')}`);
     const yourAnswer = readlineSync.question('Your answer: ');
-    if (Number(yourAnswer) - arrayRanNum[ranIndex - 1] === step) {
+    if (yourAnswer == String(rigthAnswer)) {
         console.log('Correct!');
         counter ++;
         return true;
@@ -98,6 +98,12 @@ export const randomProgression = (username) => {
         return false;
     }
 };
+
+export const bypass2 = () => {
+    let ranNumber = randomNumbers(1, 50);
+    console.log(`Question: ${ranNumber}`);
+    return ranNumber;
+}
 
 export const getPrime = (number) => {
     if (number === 1) {
