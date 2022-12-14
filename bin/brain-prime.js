@@ -4,7 +4,7 @@ import questionAnswer from '../src/cli.js'
 import { randomNumbers, conclusion, counter, getPrime, task } from '../src/index.js'
 const prime = () => {
     const name = questionAnswer();
-    task();
+    console.log('Answer "yes" if the number is prime, otherwise answer "no".');
     for (let i = 0; i < 3; i++) {
         const ranNumber = randomNumbers(1, 50);
         console.log(`Question: ${ranNumber}`);

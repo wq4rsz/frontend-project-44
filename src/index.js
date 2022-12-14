@@ -10,10 +10,6 @@ export const evenOdd = (number) => {
     }
 };
 
-export const task = () => {
-    console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-}
-
 export const conclusion = (userAnswer, correctAnswer, username) => {
     if (userAnswer === correctAnswer) { 
         console.log('Correct!');
