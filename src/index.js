@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync'
+import questionAnswer from './cli';
 export let counter = 0;
 
 export const evenOdd = (number) => {
@@ -27,6 +28,11 @@ export const task = (gameName) => {
         console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
     }
 };
+
+export const bypass = () => {
+    task('prime');
+    return questionAnswer();
+}
 
 export const conclusion = (userAnswer, correctAnswer, username) => {
     if (userAnswer === correctAnswer) { 
