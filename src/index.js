@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync'
-import questionAnswer from '../src/cli.js';
+import questionAnswer from './cli.js';
 export let counter = 0;
 
 export const evenOdd = (number) => {
@@ -36,14 +36,14 @@ export const bypass = () => {
 }
 
 export const conclusion = (userAnswer, correctAnswer, username) => {
-    if (userAnswer === correctAnswer) { 
+    if (userAnswer === correctAnswer) {
         console.log('Correct!');
-        counter ++;
+        counter++;
         if (counter === 3) {
             console.log(`Congratulations, ${username}!`)
         }
         return true;
-    } 
+    }
     else if (userAnswer !== correctAnswer) {
         console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${username}!`);
         counter = 0;
@@ -67,10 +67,10 @@ export const getExpressions = (firstValue, charsValue, secondValue) => {
     }
 };
 
-export function NOD (x, y) {
-	if (y > x) return String(NOD(y, x));
-	if (!y) return String(x);
-	return String(NOD(y, x % y));
+export function NOD(x, y) {
+    if (y > x) return String(NOD(y, x));
+    if (!y) return String(x);
+    return String(NOD(y, x % y));
 };
 
 export const randomProgression = (username) => {
