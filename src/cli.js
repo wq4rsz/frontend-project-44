@@ -5,4 +5,5 @@ const questionAnswer = () => {
   console.log(`Hello, ${name}!`);
   return name;
 };
+
 export default questionAnswer;

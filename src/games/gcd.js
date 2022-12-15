@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync'
 import questionAnswer from '../cli.js'
-import { randomNumbers, NOD, conclusion, task } from '../index.js'
+import {randomNumbers, NOD, conclusion, task} from '../index.js'
+
 const getNOD = () => {
   const name = questionAnswer();
   task('gcd');
@@ -14,4 +15,5 @@ const getNOD = () => {
     }
   }
 };
+
 export default getNOD;

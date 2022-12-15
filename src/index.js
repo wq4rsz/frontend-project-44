@@ -6,7 +6,7 @@ export const evenOdd = (number) => {
   if (number % 2 === 0) {
     return 'yes';
   }
-    return 'no';
+  return 'no';
 };
 
 export const task = (gameName) => {
@@ -36,11 +36,11 @@ export const bypass = () => {
 export const conclusion = (userAnswer, correctAnswer, username) => {
   if (userAnswer === correctAnswer) {
     console.log('Correct!');
-    counter ++;
+    counter += 1;
     if (counter === 3) {
       console.log(`Congratulations, ${username}!`)
     }
-      return true;
+    return true;
   }
   else if (userAnswer !== correctAnswer) {
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${username}!`);
@@ -76,7 +76,7 @@ export const randomProgression = (username) => {
   const ranArrLength = randomNumbers(5, 10);
   let ranFirNumber = randomNumbers(1, 5);
   let step = Number(randomNumbers(1, 5));
-  for (let i = 0; i < ranArrLength; i++) {
+  for (let i = 0; i < ranArrLength; i += 1) {
     arrayRanNum.push(ranFirNumber);
     ranFirNumber += step;
   }
@@ -85,9 +85,9 @@ export const randomProgression = (username) => {
   arrayRanNum[ranIndex] = '..';
   console.log(`Question: ${arrayRanNum.join(' ')}`);
   const yourAnswer = readlineSync.question('Your answer: ');
-  if (yourAnswer == String(rigthAnswer)) {
+  if (yourAnswer === String(rigthAnswer)) {
     console.log('Correct!');
-    counter ++;
+    counter += 1;
     return true;
   }
   else {

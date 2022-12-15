@@ -1,6 +1,7 @@
 import readlineSync from 'readline-sync'
 import questionAnswer from '../cli.js'
-import { getExpressions, randomNumbers, conclusion, task } from '../index.js'
+import {getExpressions, randomNumbers, conclusion, task} from '../index.js'
+
 const calculator = () => {
   const name = questionAnswer();
   task('calc');
@@ -17,4 +18,5 @@ const calculator = () => {
     }
   }
 };
+
 export default calculator;
