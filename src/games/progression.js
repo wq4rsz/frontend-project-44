@@ -1,5 +1,5 @@
 import questionAnswer from '../cli.js'
-import {randomProgression, counter, task} from '../index.js'
+import { randomProgression, counter, task } from '../index.js'
 
 const progression = () => {
   const name = questionAnswer();

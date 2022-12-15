@@ -28,7 +28,7 @@ export const task = (gameName) => {
 };
 
 export const bypass = () => {
-  let name = questionAnswer();
+  const name = questionAnswer();
   task('prime');
   return name;
 }
@@ -98,7 +98,7 @@ export const randomProgression = (username) => {
 };
 
 export const bypass2 = () => {
-  let ranNumber = randomNumbers(1, 50);
+  const ranNumber = randomNumbers(1, 50);
   console.log(`Question: ${ranNumber}`);
   return ranNumber;
 }
@@ -110,7 +110,7 @@ export const getPrime = (number) => {
   if (number === 2) {
     return 'yes';
   }
-  for (let i = 2; i < number; i++) {
+  for (let i = 2; i < number; i += 1) {
     if (number % i === 0) {
       return 'no';
     }
