@@ -1,8 +1,15 @@
 import readlineSync from 'readline-sync';
 import questionAnswer from '../cli.js';
 import {
-  randomNumbers, evenOdd, conclusion, task,
+  randomNumbers, conclusion, task,
 } from '../index.js';
+
+export const evenOdd = (number) => {
+  if (number % 2 === 0) {
+    return 'yes';
+  }
+  return 'no';
+};
 
 const parityCheck = () => {
   const name = questionAnswer();

@@ -1,7 +1,22 @@
 import readlineSync from 'readline-sync';
 import {
-  conclusion, getPrime, bypass, bypass2,
+  conclusion, bypass, bypass2,
 } from '../index.js';
+
+export const getPrime = (number) => {
+  if (number === 1) {
+    return 'no';
+  }
+  if (number === 2) {
+    return 'yes';
+  }
+  for (let i = 2; i < number; i += 1) {
+    if (number % i === 0) {
+      return 'no';
+    }
+  }
+  return 'yes';
+};
 
 const prime = () => {
   const name = bypass();

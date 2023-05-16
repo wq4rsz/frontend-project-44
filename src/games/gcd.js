@@ -1,8 +1,14 @@
 import readlineSync from 'readline-sync';
 import questionAnswer from '../cli.js';
 import {
-  randomNumbers, NOD, conclusion, task,
+  randomNumbers, conclusion, task,
 } from '../index.js';
+
+export function NOD(x, y) {
+  if (y > x) return String(NOD(y, x));
+  if (!y) return String(x);
+  return String(NOD(y, x % y));
+}
 
 const getNOD = () => {
   const name = questionAnswer();

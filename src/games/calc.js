@@ -1,8 +1,20 @@
 import readlineSync from 'readline-sync';
 import questionAnswer from '../cli.js';
 import {
-  getExpressions, randomNumbers, conclusion, task,
+  randomNumbers, conclusion, task,
 } from '../index.js';
+
+const getExpressions = (firstValue, charsValue, secondValue) => {
+  let result = '';
+  if (charsValue === '+') {
+    result += String(firstValue + secondValue);
+  } if (charsValue === '-') {
+    result += String(firstValue - secondValue);
+  } if (charsValue === '*') {
+    result += String(firstValue * secondValue);
+  }
+  return result;
+};
 
 const calculator = () => {
   const name = questionAnswer();
