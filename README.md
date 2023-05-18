@@ -15,41 +15,41 @@ You are presented with five console games, to choose one of them, enter `'brain-
 
 ### 1. Parity check
 
-#### Game description:
+### Game description:
 
 The user is shown a random number. He must answer "yes" if the number is even, or "no" if it is odd.
 
-#### The command to start: `brain-even`
+###The command to start: `brain-even`
 
 [![asciicast](https://asciinema.org/a/PzwZoLrj1YPpRLSfIhkYIRMLy.svg)](https://asciinema.org/a/PzwZoLrj1YPpRLSfIhkYIRMLy)
 
 ### 2. Calculator
 
-#### Game description:
+### Game description:
 
 The user is shown a random mathematical expression, such as 35 + 16, which must be calculated and write down the correct answer.
 
-#### The command to start: `brain-calc`
+### The command to start: `brain-calc`
 
 [![asciicast](https://asciinema.org/a/VKMpgnYBRNQrWYWyPmKynNEZj.svg)](https://asciinema.org/a/VKMpgnYBRNQrWYWyPmKynNEZj)
 
 ### 3. GCD
 
-#### Game description:
+### Game description:
 
 The user is shown two random numbers, for example '24 27'. The user must calculate and enter the greatest common divisor of these numbers.
 
-#### The command to start: `brain-gcd`
+### The command to start: `brain-gcd`
 
 [![asciicast](https://asciinema.org/a/4Ua26pmFoJCuXdKvqMICXEUXT.svg)](https://asciinema.org/a/4Ua26pmFoJCuXdKvqMICXEUXT)
 
 ### 4. Arithmetic progression
 
-#### Game description:
+### Game description:
 
 The user is shown a series of numbers that form an arithmetic progression, replacing any of the numbers with two dots. The user must determine that number.
 
-#### The command to start: `brain-progression`
+### The command to start: `brain-progression`
 
 [![asciicast](https://asciinema.org/a/2JbBaVFzHPPkMzMZZ58Kuo5H4.svg)](https://asciinema.org/a/2JbBaVFzHPPkMzMZZ58Kuo5H4)
 
