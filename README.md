@@ -19,7 +19,7 @@ You are presented with five console games, to choose one of them, enter `'brain-
 
 The user is shown a random number. He must answer "yes" if the number is even, or "no" if it is odd.
 
-###The command to start: `brain-even`
+### The command to start: `brain-even`
 
 [![asciicast](https://asciinema.org/a/PzwZoLrj1YPpRLSfIhkYIRMLy.svg)](https://asciinema.org/a/PzwZoLrj1YPpRLSfIhkYIRMLy)
 
