@@ -55,10 +55,10 @@ The user is shown a series of numbers that form an arithmetic progression, repla
 
 ### 5. Is it a prime number?
 
-#### Game description:
+### Game description:
 
 The user is shown a random number and has to answer 'yes' if the number is prime, or 'no' if it is not.
 
-#### The command to start: `brain-prime`
+### The command to start: `brain-prime`
 
 [![asciicast](https://asciinema.org/a/gQne8cUqROWJtzDVR0Zy6AmxQ.svg)](https://asciinema.org/a/gQne8cUqROWJtzDVR0Zy6AmxQ)
