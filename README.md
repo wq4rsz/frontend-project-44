@@ -9,13 +9,13 @@
 
 Clone this repository to your system and enter 'sudo npm link' in the project directory. Make sure that you have installed Node.js
 
-###Launching games:
+### Launching games:
 
 You are presented with five console games, to choose one of them, enter `'brain-even'`, `'brain-calc'`, `'brain-gcd'`, `'brain-progression'` or `'brain-prime'` into your console.
 
-###1. Parity check
+### 1. Parity check
 
-####Game description:
+#### Game description:
 
 The user is shown a random number. He must answer "yes" if the number is even, or "no" if it is odd.
 
